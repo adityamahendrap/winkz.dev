@@ -9,7 +9,7 @@
   
     if (!$connection) 
     {
-        echo "<h1>connection Gagal</h1>";
+        echo "<h1>Connection failed</h1>";
     }
   
 ?>

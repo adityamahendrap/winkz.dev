@@ -2,19 +2,17 @@
     session_start();
     
     include 'begin.php';
-    $name = $_POST['name'];
-    $email = $_POST['email'];
     $message = $_POST['message'];
       
-    $query = "INSERT INTO inbox VALUES(null, '$name', '$email', '$message', null)";
+    $query = "UPDATE inbox SET message = '$message' WHERE id = " . $_POST['id'];
     $executed_query = mysqli_query($connection, $query);  
 
     if ($executed_query) {
-        $_SESSION['message'] = 'Your message has been recorded, thank you!🎯';
+        $_SESSION['message'] = 'Message updated ';
     } else {
         $_SESSION['message'] = 'Something went wrong';
     }
 
-    header('Location: index.php#contact');
+    header('Location: /prognet/admin/inbox');
     exit(); 
 ?>
