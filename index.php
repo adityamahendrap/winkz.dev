@@ -19,7 +19,7 @@ if (isset($_SESSION['message'])) {
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 </head>
 
-<body oncontextmenu="return false">
+<body>
   <header class="header" id="header">
     <nav class="nav container">
       <a href="#" class="nav-logo">winkz.dev</a>
@@ -54,8 +54,6 @@ if (isset($_SESSION['message'])) {
         <i class="uil uil-times nav-close" id="nav-close"></i>
       </div>
       <div class="nav-btns">
-        <!-- <i class="uil uil-moon change-theme" id="theme-button"></i> -->
-
         <div class="nav-toggle" id="nav-toggle">
           <i class="uil uil-apps"></i>
         </div>
@@ -82,42 +80,12 @@ if (isset($_SESSION['message'])) {
           <div class="home-img">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
             <lottie-player src="https://lottie.host/7190e2aa-7c66-4942-b6b4-7ea82a9cb5f5/ITE9Lh6saT.json" background="##fff" speed="1" style="width: 400px; height: 400px" loop autoplay direction="1" mode="normal"></lottie-player>
-            <!-- <svg
-                class="home-blob"
-                viewBox="0 0 200 187"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <mask id="mask0" mask-type="alpha">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                      130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                      97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                      0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                      165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                      129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                  <image
-                    class="home-blob-img"
-                    x="-79"
-                    y="-46"
-                    xlink:href="assets/img/me.png"
-                  />
-                </g>
-              </svg> -->
           </div>
           <div class="home-data">
             <h1 class="home-title">Hi, I'm Aditya Mahendra</h1>
             <h3 class="home-subtitle">
               <span class="" id="element"></span>
             </h3>
-            <!-- <h3 class="home-subtitle" >Backend Dev</h3> -->
             <p class="home-description">
               A second year undergraduate information technology student at
               <strong>Udayana University</strong>, Bali, Indonesia.
@@ -146,8 +114,6 @@ if (isset($_SESSION['message'])) {
         introduction</span>
 
       <div class="about-container container grid">
-        <!-- <img src="assets\img\about.jpg" alt="" class="about-img" /> -->
-
         <div class="about-img">
           <svg class="home-blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <mask id="mask0" mask-type="alpha">
@@ -161,7 +127,7 @@ if (isset($_SESSION['message'])) {
                       165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                       129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                      -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-              <image class="home-blob-img" x="-79" y="-46" xlink:href="assets/img/" />
+              <image class="home-blob-img" x="0" y="-10" xlink:href="assets/img/me.png" />
             </g>
           </svg>
         </div>
@@ -188,13 +154,9 @@ if (isset($_SESSION['message'])) {
       <span class="" style="display: flex; justify-content: center; margin-bottom: 2rem;"> What I'm good at </span>
 
       <div style="display: flex; justify-content: center; gap: 1rem;">
-        <!-- <img src="https://static-00.iconduck.com/assets.00/laravel-icon-497x512-uwybstke.png" width="48" height="48"> -->
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 128 128" id="node-js">
           <path fill="#83CD29" d="M112.771 30.334l-44.097-25.605c-2.781-1.584-6.402-1.584-9.205 0l-44.568 25.605c-2.87 1.651-4.901 4.754-4.901 8.073v51.142c0 3.319 2.084 6.423 4.954 8.083l11.775 6.688c5.628 2.772 7.617 2.772 10.178 2.772 8.333 0 13.093-5.039 13.093-13.828v-50.49c0-.713-.371-1.774-1.071-1.774h-5.623c-.712 0-2.306 1.061-2.306 1.773v50.49c0 3.896-3.524 7.773-10.11 4.48l-12.167-7.013c-.424-.23-.723-.693-.723-1.181v-51.142c0-.482.555-.966.982-1.213l44.424-25.561c.415-.235 1.025-.235 1.439 0l43.882 25.555c.42.253.272.722.272 1.219v51.142c0 .488.183.963-.232 1.198l-44.086 25.576c-.378.227-.847.227-1.261 0l-11.307-6.749c-.341-.198-.746-.269-1.073-.086-3.146 1.783-3.726 2.02-6.677 3.043-.726.253-1.797.692.41 1.929l14.798 8.754c1.417.82 3.027 1.246 4.647 1.246 1.642 0 3.25-.426 4.667-1.246l43.885-25.582c2.87-1.672 4.23-4.764 4.23-8.083v-51.142c0-3.319-1.36-6.414-4.229-8.073zM77.91 81.445c-11.726 0-14.309-3.235-15.17-9.066-.1-.628-.633-1.379-1.272-1.379h-5.731c-.709 0-1.279.86-1.279 1.566 0 7.466 4.059 16.512 23.453 16.512 14.039 0 22.088-5.455 22.088-15.109 0-9.572-6.467-12.084-20.082-13.886-13.762-1.819-15.16-2.738-15.16-5.962 0-2.658 1.184-6.203 11.374-6.203 9.105 0 12.461 1.954 13.842 8.091.118.577.645.991 1.24.991h5.754c.354 0 .692-.143.94-.396.24-.272.367-.613.335-.979-.891-10.568-7.912-15.493-22.112-15.493-12.631 0-20.166 5.334-20.166 14.275 0 9.698 7.497 12.378 19.622 13.577 14.505 1.422 15.633 3.542 15.633 6.395 0 4.955-3.978 7.066-13.309 7.066z"></path>
         </svg>
-        <!-- <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_go_gopher_icon_130571.png" width="48" height="48"> -->
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" preserveAspectRatio="xMinYMin meet" viewBox="0 0 256 256" id="javascript"><path fill="#F7DF1E" d="M0 0h256v256H0V0z"></path><path d="M67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371 7.905 0 12.89-3.092 12.89-15.12v-81.798h24.057v82.138c0 24.917-14.606 36.259-35.916 36.259-19.245 0-30.416-9.967-36.087-21.996M152.381 211.354l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607 9.969 0 16.325-4.984 16.325-11.858 0-8.248-6.53-11.17-17.528-15.98l-6.013-2.58c-17.357-7.387-28.87-16.667-28.87-36.257 0-18.044 13.747-31.792 35.228-31.792 15.294 0 26.292 5.328 34.196 19.247L210.29 147.43c-4.125-7.389-8.591-10.31-15.465-10.31-7.046 0-11.514 4.468-11.514 10.31 0 7.217 4.468 10.14 14.778 14.608l6.014 2.577c20.45 8.765 31.963 17.7 31.963 37.804 0 21.654-17.012 33.51-39.867 33.51-22.339 0-36.774-10.654-43.819-24.574"></path></svg> -->
-        <!-- <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" width="48" height="48"> -->
         <img width="48" height="48" src="data:image/png;base64,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" alt="">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 128 128" id="express">
           <path d="M40.53 77.82V50.74H42V55a5.57 5.57 0 0 0 .48-.6 7.28 7.28 0 0 1 6.64-4.12c3.35-.1 6.07 1.14 7.67 4.12a13.24 13.24 0 0 1 .32 12.14c-1.49 3.34-5.17 5-9.11 4.39a7.37 7.37 0 0 1-5.88-3.88V77.82zM42 60.32c.13 1.32.18 2.26.33 3.18.58 3.62 2.72 5.77 6.08 6.16A6.91 6.91 0 0 0 56 65.27a11.77 11.77 0 0 0-.26-9.68 6.77 6.77 0 0 0-7.13-3.94 6.59 6.59 0 0 0-5.89 4.87A33.4 33.4 0 0 0 42 60.32zM88.41 64A7.92 7.92 0 0 1 80.67 71c-6.16.31-9.05-3.78-9.51-8.5A13.62 13.62 0 0 1 72.36 55a8.37 8.37 0 0 1 8.71-4.67 8 8 0 0 1 7.1 6.09 41.09 41.09 0 0 1 .69 4.5H72.67c-.3 4.28 2 7.72 5.26 8.55 4.06 1 7.53-.76 8.79-4.62C87 63.86 87.51 63.72 88.41 64zM72.67 59.55H87.14c-.09-4.56-2.93-7.86-6.78-7.91C76 51.57 72.86 54.75 72.67 59.55zM91.39 64.1h1.42A5.69 5.69 0 0 0 96.15 69a8.73 8.73 0 0 0 7.58-.2 3.41 3.41 0 0 0 2-3.35 3.09 3.09 0 0 0-2.08-3.09c-1.56-.58-3.22-.9-4.81-1.41A35.25 35.25 0 0 1 94 59.18c-2.56-1.25-2.72-6.12.18-7.66a10.21 10.21 0 0 1 9.76-.15 5.14 5.14 0 0 1 2.6 5.24h-1.22c0-.06-.11-.11-.11-.17-.15-3.89-3.41-5.09-6.91-4.75a9.17 9.17 0 0 0-3 .91 3 3 0 0 0-1.74 3 3 3 0 0 0 2 2.82c1.54.56 3.15.92 4.73 1.36 1.27.35 2.59.58 3.82 1a4.51 4.51 0 0 1 3.1 4.07 4.81 4.81 0 0 1-2.59 5c-3.34 1.89-8.84 1.39-11.29-1A6.67 6.67 0 0 1 91.39 64.1zM125.21 56.61h-1.33c0-.18-.07-.34-.09-.49a4.35 4.35 0 0 0-3.54-4.18 8.73 8.73 0 0 0-5.61.27 3.41 3.41 0 0 0-2.47 3.25 3.14 3.14 0 0 0 2.4 3.16c2 .62 4.05 1 6.08 1.56a17 17 0 0 1 1.94.59 5 5 0 0 1 .27 9.31 11.13 11.13 0 0 1-9 .09 6.24 6.24 0 0 1-3.76-6.06l.56 0h.74a7.29 7.29 0 0 0 11.1 4.64 3.57 3.57 0 0 0 1.92-3.34 3.09 3.09 0 0 0-2.11-3.07c-1.56-.58-3.22-.89-4.81-1.4a35.43 35.43 0 0 1-4.87-1.75c-2.5-1.23-2.7-6.06.15-7.6a10.07 10.07 0 0 1 9.92-.11A5.23 5.23 0 0 1 125.21 56.61zM38.1 70.51a2.29 2.29 0 0 1-2.84-1.08c-1.63-2.44-3.43-4.77-5.16-7.15l-.75-1c-2.06 2.76-4.12 5.41-6 8.16a2.2 2.2 0 0 1-2.7 1.06l7.73-10.37-7.19-9.37a2.39 2.39 0 0 1 2.85 1c1.67 2.44 3.52 4.77 5.36 7.24 1.85-2.45 3.68-4.79 5.39-7.21a2.15 2.15 0 0 1 2.68-1l-2.79 3.7c-1.25 1.65-2.48 3.31-3.78 4.92a1 1 0 0 0 0 1.49C33.29 64.07 35.66 67.25 38.1 70.51zM70.92 50.66v1.4a7.25 7.25 0 0 0-7.72 7.49q0 4.94 0 9.88c0 .35 0 .7 0 1.12H61.77V50.74h1.4V54.8C64.9 51.84 67.57 50.74 70.92 50.66zM2.13 60c.21-1 .34-2.09.63-3.11 1.73-6.15 8.78-8.71 13.63-4.9 2.84 2.23 3.55 5.39 3.41 8.95h-16C3.54 67.3 8.13 71.14 14 69.18a6.09 6.09 0 0 0 3.87-4.31c.31-1 .81-1.17 1.76-.88a8.12 8.12 0 0 1-3.88 5.93 9.4 9.4 0 0 1-10.95-1.4 9.85 9.85 0 0 1-2.46-5.78c0-.34-.13-.68-.2-1Q2.13 60.85 2.13 60zm1.69-.43H18.29c-.09-4.61-3-7.88-6.88-7.91C7.09 51.6 4 54.8 3.81 59.55z"></path>
@@ -221,7 +183,7 @@ if (isset($_SESSION['message'])) {
         <div class="swiper-wrapper">
           <!-- ------------------------portfollio 1-------------------- -->
           <div class="portfolio-content grid swiper-slide">
-            <img src="assets/img/nowted.png" class=" responsive" style="border:5px solid blueviolet; border-radius: 5px; max-width:600px; margin:auto" />
+            <img src="assets/img/nowted.png" class=" responsive" style="border:5px solid blueviolet; border-radius: 5px;  margin:auto" />
 
             <div class="portfolio-data">
               <div>
@@ -238,13 +200,6 @@ if (isset($_SESSION['message'])) {
                 Association of Information Technology Udayana University.
               </p>
               <div class="btn-portfolio">
-                <!-- <a
-                    href="https://github.com/Venkateeshh/Weather-App"
-                    class="button button--flex button--small portfolio-button"
-                  >
-                    GitHub Repository
-                    <i class="uil uil-external-link-alt button-icon"></i>
-                  </a> -->
                 <a href="https://nowted-code-design.vercel.app/" class="button button--flex button--small portfolio-button">
                   See Live
                   <i class="uil uil-external-link-alt button-icon"></i>
@@ -258,7 +213,7 @@ if (isset($_SESSION['message'])) {
           </div>
 
           <div class="portfolio-content grid swiper-slide">
-            <img src="assets/img/itcc.png" class=" responsive" style="border:5px solid blueviolet; border-radius: 5px; max-width:600px; margin:auto" />
+            <img src="assets/img/itcc.png" class=" responsive" style="border:5px solid blueviolet; border-radius: 5px;  margin:auto" />
 
             <div class="portfolio-data">
               <div>
@@ -337,13 +292,6 @@ if (isset($_SESSION['message'])) {
                 Association of Information Technology Udayana University.
               </p>
               <div class="btn-portfolio">
-                <!-- <a
-                    href="https://github.com/Venkateeshh/Weather-App"
-                    class="button button--flex button--small portfolio-button"
-                  >
-                    GitHub Repository
-                    <i class="uil uil-external-link-alt button-icon"></i>
-                  </a> -->
                 <a href="https://itcc.hmtiudayana.id" class="button button--flex button--small portfolio-button">
                   See Live
                   <i class="uil uil-external-link-alt button-icon"></i>
@@ -400,20 +348,13 @@ if (isset($_SESSION['message'])) {
                   GitHub Repository
                   <i class="uil uil-external-link-alt button-icon"></i>
                 </a>
-                <!-- <a
-                    href="https://venkateeshh.github.io/Weather-App/"
-                    class="button button--flex button--small portfolio-button"
-                  >
-                    See Live
-                    <i class="uil uil-external-link-alt button-icon"></i>
-                  </a> -->
               </div>
             </div>
           </div>
 
           <!-- ------------------------portfollio 3-------------------- -->
           <div class="portfolio-content grid swiper-slide">
-            <img src="assets/img/glammerce.png" style="border:5px solid blueviolet; border-radius: 5px; max-width:600px; margin:auto" />
+            <img src="assets/img/glammerce.png" style="border:5px solid blueviolet; border-radius: 5px;  margin:auto" />
 
             <div class="portfolio-data">
               <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" width="24" height="24">
@@ -438,26 +379,17 @@ if (isset($_SESSION['message'])) {
                   GitHub Repository
                   <i class="uil uil-external-link-alt button-icon"></i>
                 </a>
-                <!-- <a
-                    href="https://venkateeshh.github.io/Weather-App/"
-                    class="button button--flex button--small portfolio-button"
-                  >
-                    See Live
-                    <i class="uil uil-external-link-alt button-icon"></i>
-                  </a> -->
               </div>
             </div>
           </div>
         </div>
 
-        <!-- add arrows -->
         <div class="swiper-button-next">
           <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
         </div>
         <div class="swiper-button-prev">
           <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
         </div>
-        <!-- add pagination -->
         <div class="swiper-pagination"></div>
       </div>
     </section>
@@ -496,13 +428,6 @@ if (isset($_SESSION['message'])) {
             </div>
           </div>
         </div>
-
-        <!-- <div>
-            <div class="did-floating-label-content ">
-              <input class="did-floating-input" type="text" placeholder=" ">
-              <label class="did-floating-label">Sale Price</label>
-            </div>
-          </div> -->
 
         <form action="./command/create_inbox.php" class="contact-form grid" method="POST" onsubmit="return validateForm()">
           <div class="contact-inputs grid">
@@ -580,7 +505,6 @@ if (isset($_SESSION['message'])) {
     var typed = new Typed('#element', {
       strings: ['College Student', 'SoftDev Enthusiast', 'Sufferer'],
       typeSpeed: 20,
-      // backSpeed: 0,
       backDelay: 2000,
       loop: true,
       loopCount: Infinity,
