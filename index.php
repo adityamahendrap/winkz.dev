@@ -195,9 +195,9 @@ if (isset($_SESSION['message'])) {
               </div>
               <h3 class="portfolio-title">Nowted</h3>
               <p class="portfolio-description">
-                A web application for registering participants of ITCC Udayana
-                2023. ITCC is a national IT competition held by the Student
-                Association of Information Technology Udayana University.
+                Nowted is a visually striking and highly functional note-taking app with a variety of features and tools 
+                to help users organize, edit, and access their notes. The app has a clean and modern design, with a 
+                three-column layout that allows users to easily navigate and access their notes.
               </p>
               <div class="btn-portfolio">
                 <a href="https://nowted-code-design.vercel.app/" class="button button--flex button--small portfolio-button">
